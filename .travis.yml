@@ -16,7 +16,7 @@ after_success:
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to docker hub
-  - docker push -t kjelltore/multi-client
-  - docker push -t kjelltore/multi-nginx
-  - docker push -t kjelltore/multi-server
-  - docker push -t kjelltore/multi-worker
+  - docker push kjelltore/multi-client
+  - docker push kjelltore/multi-nginx
+  - docker push kjelltore/multi-server
+  - docker push kjelltore/multi-worker
